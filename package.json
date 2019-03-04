@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
@@ -13,7 +14,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "sass --watch src/styles/scss:src/styles/css"
-
   },
   "eslintConfig": {
     "extends": "react-app"
