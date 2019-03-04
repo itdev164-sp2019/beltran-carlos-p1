@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Recipe from './Recipe'
 import Navigation from './Navigation'
+import Autocomplete from './SearchBar';
 
 
 class App extends Component {
@@ -68,6 +69,7 @@ selectNewRecipe(recipeId){
       }
     }
     return (
+      
       <div className="App">
         <aside className='sidebar'>
           <h1 className='sidebar__title'>The Art of Keto</h1>
@@ -77,6 +79,21 @@ selectNewRecipe(recipeId){
             recipeToSelect={this.selectNewRecipe}
           />
         </aside>
+        <div className="row">
+
+        <Autocomplete
+        options={[
+          "Zucchini",
+          "Taco Seasoning",
+          "Coconut Oil",
+          "Asparagus",
+          "Butter",
+          "Salmon",
+          "Salt",
+          "Pepper"
+        ]}
+      />
+        
         {
           recipeToSelect ? 
             <Recipe
@@ -87,6 +104,7 @@ selectNewRecipe(recipeId){
             :
             null
         }
+        </div>
       </div>
     );
     }

@@ -16,7 +16,7 @@ class Recipe extends Component{
             <ol className="Recipe__steps">
             {steps}
             </ol>
-            <div class="Recipe__add"><button className="ui button">+</button></div>
+            <div className="Recipe__add"><button className="ui button">+</button></div>
         </div>
         
         );
