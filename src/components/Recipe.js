@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 class Recipe extends Component{
-    render(){
+    render() {
         const ingredients = this.props.ingredients.map((ingredient, i) => <li key={i}>{ingredient}</li>);
         const steps = this.props.steps.map((step, i) => <li key={i}>{step}</li>);
         return (
@@ -16,7 +16,10 @@ class Recipe extends Component{
             <ol className="Recipe__steps">
             {steps}
             </ol>
+            <div class="Recipe__add"><button className="ui button">+</button></div>
         </div>
+        
+        );
     }
 }
 
