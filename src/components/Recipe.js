@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Popup from './PopUp'
 import PropTypes from 'prop-types';
 
 class Recipe extends Component{
@@ -16,7 +17,9 @@ class Recipe extends Component{
             <ol className="Recipe__steps">
             {steps}
             </ol>
-            <div className="Recipe__add"><button className="ui button">+</button></div>
+            <div className="Recipe__add">
+                <Popup className="ui" />
+            </div>
         </div>
         
         );
